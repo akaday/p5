@@ -9,10 +9,13 @@
   </head>
   <body>
     <main>
-      <textarea id="sketch-code" rows="10" cols="50"></textarea>
-      <button id="save-sketch">Save Sketch</button>
-      <button id="load-sketch">Load Sketch</button>
-      <button id="remix-sketch">Remix Sketch</button>
+      <label for="sketch-code">Enter your sketch code:</label>
+      <textarea id="sketch-code" rows="10" cols="50" aria-label="Sketch code"></textarea>
+      <button id="save-sketch" title="Save your sketch" aria-label="Save Sketch">Save Sketch</button>
+      <button id="load-sketch" title="Load a saved sketch" aria-label="Load Sketch">Load Sketch</button>
+      <button id="remix-sketch" title="Remix the current sketch" aria-label="Remix Sketch">Remix Sketch</button>
+      <button id="clear-sketch" title="Clear the sketch code" aria-label="Clear Sketch">Clear Sketch</button>
+      <div id="status-message" aria-live="polite"></div>
     </main>
     <script src="sketch.js"></script>
   </body>
